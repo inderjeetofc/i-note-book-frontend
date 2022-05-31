@@ -4,7 +4,7 @@ import NotesContext from "./NotesContext";
 
 export default function NotesState(props) {
     const host = "http://localhost:3000"
-    const token = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjYyOTQ5NjYyODM4NTU3NGNmODRkMmFjNCIsImVtYWlsIjoidGVzdDFAeW9wbWFpbC5jb20iLCJpYXQiOjE2NTM5ODY4OTV9.uINXdB0WDABIPToULUzTIgnOo4hsTIGQ5kk1A1qCsvA"
+    const token = localStorage.getItem('auth_token')
     const noteSample = []
     const [notes, setnotes] = useState(noteSample)
     //add notes
